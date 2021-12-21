@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <style>
+        body{
+            display: grid;
+            gap: 10px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    #bigbox{
+      width: 100%;
+      max-width: 700px;
+      grid-area: b;
+
+    }
+    #frm img:nth-child(1){
+      width: 200px;
+      margin-left: 180px;
+    }
+    #frm{
+        grid-area : a;
+        
+    }
+    input{
+      border: 1px solid blue;
+      margin-left: -40px;
+      height: 40px;
+      margin-top: 15px;
+      width:300px ;
+      padding-left:10px ;
+      text-align: left;
+      padding-right: 100px ;
+
+    }
+    #sub{
+     background-color:#fd7e14;;
+     color: white; 
+     font-size: large;
+     text-align: center;
+     padding-left: 100px;
+     width: 410px;
+  
+    }
+    #subg{
+      background-color: #007bff;
+      color: white;
+      font-size: large;
+      margin-top: 5px;
+      text-align: center;
+      padding-left: 100px;
+      width: 410px;
+      margin-left: -40px;
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
+  
+    #frm  div:nth-child(1){
+      font-size: medium;
+      margin-top: 10px;
+      margin-left: 120px;
+    
+    }
+    #frm  div:nth-child(2){
+      font-size: medium;
+      margin-top: 10px;
+      margin-left: 120px;
+    }
+    #frm  div:nth-child(3){
+      font-size: medium;
+      margin-top: 10px;
+      margin-left: 120px;
+    }
+    #frm  div:nth-child(4){
+      font-size: medium;
+      margin-top: 10px;
+      margin-left: 120px;
+    }
+   #pg {
+  text-align: center;
+    margin-top: 10px;
+    font-family:'Nunito Sans', sans-serif;
+    }
+  #frm div:nth-child(5){
+margin-top: 10px;
+margin-left: 120px;
+padding-right: 80px;
+
+  }
+ 
+    @media screen and ( min-width : 900px) {
+      body{
+        grid-template-areas:"a b" ;
+      }
+    }
+    @media screen and ( max-width : 800px) {
+      body{
+        grid-template-areas:"a";
+      }
+     #bigbox{
+       display: none;
+     } 
+    }
+    #bigbox > div{
+width: 100%;
+max-width: 575px;
+
+    }
+    #bigbox{
+      background-image: linear-gradient(to bottom right,#1a1aff,#99ebff);
+  
+    }
+    h3{
+      margin-top: -25px;
+      margin-left: 180px;
+      font-weight: 500;
+    }
+label{
+  margin-left: -40px;
+}
+#o img{
+  border-radius: 50px;
+  grid-row-start: 1;
+  grid-column-start:1;
+  grid-column-end: 2;
+  width: 80px;
+  border: 3px solid #0086b3;
+  
+}
+ #o p{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  color: white;
+
+}
+#o{
+  display: grid;
+  background-image: linear-gradient(to bottom right,#0066cc, #ccebff);
+padding-left: 20px;
+padding-top: 5px;
+margin-left: 70px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="frm">
+  <img src="https://comparecamp.com/media/uploads/2019/06/Engagebay-Logo.png" alt="Engagebay Logo" >
+  <h3>Get Started for FREE</h3>
+<form>
+  <div>
+    <label for ="name">Name</label></br>
+    <input type="text" id="name" class="a" placeholder="Name" /></br>
+   </div>
+   <div><label for="mail">Username</label></br>
+    <input type="email" id="mail" class="a" placeholder="Work Email" /></br>
+  </div>
+<div>  <label for="url">Website URL</lable></br>
+    <input type="url" id="url" class="a" placeholder="Website URL"   /></br>
+  </div>
+<div>  <label for="pswrd">Password</label></br>
+<input type="password" id="pswrd" class="a" placeholder="Password"/></br>
+</div>
+<div>
+<input type="submit" id="sub" placeholder="SIGN UP"/></br>
+
+
+ 
+<input type="submit"  id="subg" placeholder="SIGN UP WITH G SUITE"/>
+</div>
+<div id="pg"><p>Forgot password?</p>
+<p>Already have an account? Sign in</p></div>
+</form>
+</div>
+<div id="bigbox">
+  <div id="o">
+<img src="https://cdn5.engagebay.com/img/testimonials/vandana.jpeg"/>
+   <p>I love the landing page builder and ability to import a URL and basically create any type of landing page. This makes creating funnels super easy. You can then customize it to suit your needs.
+    
+    - Vandana Taxali, Intellectual Property, Digital Media & Entertainment Lawyer</p></div>  
+  <img src ="https://d2p078bqz5urf7.cloudfront.net/cloud/assets/img/login-image.svg"/>
+
+</div>
+<script>
+ var c = document.getElementsByClassName("a");
+ function col(){ 
+
+c.style.color = "red";
+ }  
+ document.addEventListener('click',col);
+</script>
+</body>
+</html>

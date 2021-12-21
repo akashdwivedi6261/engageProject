@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EngageBay - Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn5.engagebay.com/images/256x256.png" type="image/x-icon">
+    <style>
+       
+        #cont {
+            display: grid;
+            font-family: "Rubik", sans-serif;
+            grid-template-columns: 32% 68%;
+            grid-template-areas: 'l r';
+        }
+        #left {
+            text-align: center;
+            grid-area: 'l';
+            background-color: white !important;
+        }
+        #right {
+            margin-top: 0px;
+            grid-area: 'r';
+            background-color: rgba(50,120,207,255);
+        }
+        .logo_top {
+            width: 200px;
+            margin: 60px 0px 25px 0px;
+        }
+        .login_txt {
+            font-size: 50px;
+            margin-top: 0px;
+            font-weight: 200;
+        }
+        .form1, .form2 {
+           margin: auto;
+        }
+        #name, #pass {
+            width: 80%;
+            clear: both;
+            padding: 17px 0px;
+            border: 1px solid rgb(180, 179, 179);
+            margin-bottom: 30px;
+        }
+        .lbl1, .lbl2{
+            display: inline-block;
+            font-size: 17px;
+            margin: 0px 0px 6px 10%;
+            float: left;
+        }
+        ::placeholder {
+            font-size: 14px;
+            padding-left: 10px;
+            opacity: 0.2;
+        }
+        .btn {
+            width: 80%;
+            clear: both;
+            padding: 12px 0px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+            background-color: rgba(242,96,62,255);
+            font-size: 16px;
+            outline: none;
+            border: 1px solid rgba(242,96,62,255);
+            cursor: pointer;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        .sign_in {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        .google {
+            width: 25px;
+            border: 1px solid blue;
+            padding: 11px;
+            border-right: none;
+        }
+        .sign {
+            flex-basis: 90%;
+            font-size: 15px;
+            color: white;
+            background-color: rgba(0,123,255,255);
+            padding: 9px 0px;
+            border: 1px solid rgba(0,123,255,255);
+            outline: none;
+        }
+        .forgot {
+            font-size: 15px;
+            color: rgb(88, 88, 88);
+            margin-top: 50px;
+        }
+        .dont {
+            font-size: 15px;
+            color: rgb(88, 88, 88);
+        }
+        .thought {
+            display: flex;
+            width: 80%;
+            float: right;
+            margin-top: 70px;
+            margin-right: 30px;
+            background-color: rgba(44,111,194,255);
+            padding: 15px 10px;
+            border-radius: 5px;
+        }
+        .round_img {
+            width: 90px;
+            height: 90px;
+            border-radius: 55px;
+            margin: 5px 20px 0px 15px;
+            border: 6px solid rgba(95,126,183,255);
+        }
+        .txt {
+            margin-top: 10px;
+            font-size: 14px;
+            color: rgba(252,253,254,255);
+            font-weight: 500;
+        }
+        .txt2 {
+            font-size: 14px;
+            color: rgba(252,253,254,255);
+            font-weight: 500;
+            float: right;
+            margin-top: 0px;
+            font-style: italic;
+        }
+        .mid_img {
+            width: 65%;
+            margin: auto;
+            text-align: center;
+            margin: 80px 70px 30px 150px;
+            clear: both;
+        }
+
+        @media screen and (max-width: 992px) {
+            #cont {
+                display: block;
+            }
+            #right {
+                display: none;
+                width: 0px;
+            }
+            #left {
+                width: 100%;
+            }
+           
+            #name, #pass {
+                width: 100%;
+            }
+            .btn, .sign_in {
+                width: 50%;
+            }
+            .lbl1, .lbl2{
+            display: block;
+            font-size: 17px;
+            margin: 0 0 10px 25%;
+            width: 10%;
+            float: revert;
+        }
+        #name, #pass {
+            width: 50%;
+            clear: both;
+            padding: 17px 0px;
+            border: 1px solid rgb(180, 179, 179);
+            margin-bottom: 30px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div id="left">
+            <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/assets/img/engagebay.png" class="logo_top"/>
+            <p class="login_txt">Login</p>
+            <form class="form1"> 
+                <label for="name" class="lbl1">Username</label>
+                <input type="text" id="name" class = "hov" placeholder="Work Email"/>
+            </form>  
+            <form class="form2">
+                <label for="pass" class="lbl2">Password</label>
+                <input type="password" id="pass" class = "hov" placeholder="Password"/>
+            </form>
+            <button class="btn">Login</button>
+            <div class="sign_in">
+                <img src="	https://d2p078bqz5urf7.cloudfront.net/cloud/dev/assets/img/google-favicon.png" class="google"/>
+                <button class="sign">SIGN IN WITH G SUITE</button>
+            </div>
+            <p class="forgot">Forgot Password?</p>
+            <p class="dont">Don't have an account? Sign Up</p>
+        </div>
+        <div id="right">
+            <div class="thought">
+                <img src="	https://cdn5.engagebay.com/img/testimonials/santiago.jpeg" class="round_img"/>
+                <div>
+                    <p class="txt">A full-featured marketing platform. With this, you have all you need to get started and succeed. Having all in one platform make any marketer job much easier.</p>
+                    <p class="txt2">- Santiago B, Southern Europe Director, Triptease</p>
+                </div>
+            </div>
+            <img src="https://d2p078bqz5urf7.cloudfront.net/cloud/assets/img/login-image.svg" class="mid_img"/>
+        </div>
+    </div>
+</body>
+</html>

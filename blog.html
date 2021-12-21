@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        body{
+            font-family:'Poppins', sans-serif ;
+            display:grid ;
+            font-weight: lighter;
+        }
+ #box {
+grid-area: m;
+ } 
+ #boxs{
+     display: grid;
+     gap: 5px;
+ } 
+ #box1{
+     grid-area: q;
+     
+ }
+ #box2{
+     grid-area:one;
+    
+ }
+ #box3 {
+     grid-area: two;
+    }
+ #box4{
+     grid-area:three;
+     
+     }
+ #box5{
+     grid-area: four;
+     }
+ #box6{
+     grid-area: five;
+       }
+ #box7 {
+     grid-area:six;
+}
+ #box8{
+     grid-area: seven;
+    }
+ #box9{
+     grid-area: eigth;
+ }
+ #box10{
+     grid-area: nine;
+    }
+ @media screen and (min-width:900px) {
+     #box{
+grid-template-areas:'q'
+                    'one two three'
+                    'four five six'
+                    'seven eight nine';
+     } 
+     #box1 img{
+         max-width: 1500px;
+         min-width: 900px;
+         width: 100%;
+         margin-top: 100px;
+         max-height: 300px;
+         
+     }
+.blog, .blog img{
+    max-width: 350px;
+    min-width: 300px;
+    width: 100%;
+    background-color: whitesmoke;
+max-height: 500px;
+border: 1px solid rgb(230, 229, 229);
+}
+#boxs{
+     display: grid;
+ } 
+ #box1{
+     grid-area: q;
+     padding-right: 8%;
+ }
+ #box2{
+     grid-area:one;
+     margin: 1%;
+     margin-top: 45%;
+     margin-left: -11%;
+     background-color: white;
+ }
+ #box3 {
+     grid-area: two;
+     margin: 1%;
+     margin-top: 45%;
+     margin-left: 24%;
+     background-color: white;
+ }
+ #box4{
+     grid-area:three;
+     margin: 1%;
+     margin-left: 60%;
+     margin-top: 45%;
+     background-color: white;
+    
+ }
+ #box5{
+     grid-area: four;
+     margin: 1%;
+     margin-top: 95%;
+     margin-left: -11%;
+     background-color: white;
+ }
+ #box6{
+     grid-area: five;
+     margin:1%;
+     margin-top: 95%;
+     margin-left:25% ;
+     background-color: white;
+ }
+ #box7 {
+     grid-area:six;
+     margin-top: 95%;
+     margin-left: 60%;
+     background-color: white;
+
+ }
+ #box8{
+     grid-area: seven;
+    margin-top:143%;
+    margin-left: -11%;
+    background-color: white;
+ }
+ #box9{
+     grid-area: eigth;
+     margin-top: 143%;
+     margin-left: 25%;
+     background-color: white;
+ }
+ #box10{
+     grid-area: nine;
+     margin-top: 143%;
+     margin-left:60% ;
+     background-color: white;
+ } 
+}
+ @media screen and (max-width:890px) {
+     #boxs{
+grid-template-areas:'q'
+                      'one';
+                      
+                      
+     }
+     #box1 img{
+         max-width: 800px;
+         min-width:600px;
+         width: 100%;
+         margin-top: 25%;
+        
+          }
+          .blog, .blog img{
+    max-width: 800px;
+    min-width: 200px;
+    width: 100%;
+    max-height: 500px;
+    background-color: white;
+
+border: 1px solid rgb(230, 229, 229);
+}
+#box10{
+    margin-top: 3400px;
+    max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    max-height: 600px;
+    background-color: white;
+}
+#box9{
+   margin-top: 2900px; 
+   max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    background-color: white;
+}
+#box8{
+    margin-top: 4000px;
+    margin-left:-600px ;
+    max-width: 850px;
+    min-width: 620px;
+    background-color: white;
+} 
+#box7{
+    margin-top: 2300px;
+    max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    background-color: white;
+}
+#box6{
+    margin-top:1750px ;
+    max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    background-color: white;
+}
+#box5{
+    margin-top:1200px ;
+    max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    background-color: white;
+}
+#box4{
+    margin-top: 590px;
+    max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    background-color: white;
+} 
+#box3{
+    margin-top: 40px;
+    max-width: 850px;
+    min-width: 620px;
+    margin-left: -600px;
+    background-color: white;
+} 
+#box2{
+    
+    margin-top: 2%;
+    background-color: white;
+}   
+ }       
+.menubar{
+    text-align:right ;
+    position: absolute;
+    right: 0;
+}
+.menubar ul{
+    display: inline-flex;
+    list-style: none;
+}
+.menubar ul li{
+    width:auto;
+    margin: 20px;
+    
+    
+}
+.menubar ul li a {
+    text-decoration: none;
+    color: blue;
+}
+ .menubar ul li a:hover{
+
+color: black;
+     
+}
+  a   img{
+    width:200px;
+
+    
+  }
+  .submenu {
+      display: none;
+  }
+  .menubar ul  li:hover .submenu  {
+      display: block;
+      position: absolute;
+      color: black;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    border-top: 1px solid blue;
+    font-weight: 500;
+  }
+  .menubar ul  li:hover .submenu ul{
+      display: block;
+      margin: 10px;
+      text-align: center;
+
+  }
+  .submenu1{
+      display:none;
+  }
+   .submenu  ul  li:hover .submenu1{
+    display: block;
+      position: absolute;
+      color: black;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    border-top: 1px solid blue;
+  
+   } 
+   .submenu ul li:hover .submenu1 ul{
+       display:block;
+       margin:10px;
+       text-align: center;
+   } 
+   .submenu2{
+      display:none;
+  }
+   .submenu  ul  li:hover .submenu2{
+    display: block;
+      position: absolute;
+      color: black;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    border-top: 1px solid blue; 
+    margin-top: -30px;
+   } 
+   .submenu ul li:hover .submenu2 ul{
+       display:block;
+    margin: 10px;
+text-align: center;
+   } 
+   .submenu3{
+      display:none;
+  }
+   .submenu  ul  li:hover .submenu3{
+    display: block;
+      position: absolute;
+      color: black;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    border-top: 1px solid blue;
+    
+   } 
+   .submenu ul li:hover .submenu3 ul{
+       display:block;
+    margin: 10px;
+    text-align: center;
+
+   } 
+   .submenu4{
+      display:none;
+  }
+   .submenu  ul  li:hover .submenu4{
+    display: block;
+      position: absolute;
+      color: black;
+    background-color: white;
+    border: 3px solid whitesmoke;
+    border-top: 1px solid blue;
+  } 
+   .submenu ul li:hover .submenu4 ul{
+       display:block;
+       margin: 10px;
+       text-align: center; } 
+#sign {
+       background: #fd7e14;
+       padding-right: 6px;
+       padding-left: 6px;
+       border-radius: 8px;
+       height: 30px;
+       padding-top: 17px;
+       margin-top: 5px;
+       padding-left: 5px;
+       padding-right: 5px;
+   }
+#sign > a {
+    color: white;
+
+}
+#desktop{
+    display: grid;
+    
+}
+#mobile{
+display: grid;
+    
+
+}
+#mobile  ul{
+list-style: none;
+}
+#mobilemenu {
+    display: none;
+margin-top: 60px;
+position: absolute;
+left: 0;
+background-color:  rgb(234, 234, 234);
+padding-right: 100%;
+
+}
+
+#mobilemenu1{
+  display: none; 
+  position: absolute; 
+  left: 0;
+  background-color:  rgb(234, 234, 234);
+  padding-right: 100%;
+}
+
+#mobilemenu2{
+    display: none;
+position: absolute;
+left: 0;
+background-color:  rgb(234, 234, 234);
+padding-right: 100%; 
+}
+#mobilemenu3{
+    display: none;
+position: absolute;
+left: 0;
+background-color:  rgb(234, 234, 234);
+padding-right: 100%; 
+}
+#mobilemenu4{
+    display: none;
+position: absolute;
+left: 0;
+background-color:  rgb(234, 234, 234);
+padding-right: 100%; 
+}
+#mobilemenu5{
+    display: none;
+position: absolute;
+left: 0;
+background-color:  rgb(234, 234, 234);
+padding-right: 100%; 
+}
+#mobilemenu a {
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(226, 225, 225) ;
+    width: 800px;
+    text-align: left;
+
+}
+#mobilemenu1 a {
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(226, 225, 225) ;
+    width: 800px;
+    text-align: left;
+    
+
+}
+#mobilemenu2 a {
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+    
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(226, 225, 225) ;
+    width: 800px;
+    text-align: left;
+
+}
+#mobilemenu3 a {
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+    
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(226, 225, 225) ;
+    width: 800px;
+    text-align: left;
+
+}
+#mobilemenu4 a {
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+    
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(68, 66, 66) ;
+    width: 800px;
+    text-align: left;
+
+}
+#mobilemenu5 a {
+    color: blue;
+    text-decoration: none;
+    font-size: 15px;
+    
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(68, 66, 66) ;
+    width: 800px;
+    text-align: left;
+
+}
+#mobile #logo img{
+    width: 200px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+ #open{
+    font-size: x-large;
+    color: blue;
+    position: absolute;
+    display: block;
+    right:0;
+    top:0;
+    grid-area: b;
+}
+
+
+  @media screen and (min-width:900px){
+   #desktop{
+       grid-template-areas: 'a'
+                            'm'
+                            'e';
+   }  
+   #mobile{
+       display: none;
+   } 
+   .footer{
+    background-color: lightgrey;
+    max-width: 1500px;
+    min-width:900px;
+    text-align: center;
+  max-height: 80px;
+  margin-top: 2000px;
+grid-area: e;  
+padding-left: 200px;
+padding-right: 50PX;
+margin-left: -300px;
+}
+  }
+@media screen and (max-width:890px){
+ #mobile{
+     grid-template-areas: 'b'
+                            'e';
+                            
+ } 
+ #desktop{
+     display: none;
+ }
+ .footer{
+    background-color: lightgrey;
+    max-width: 850px;
+    min-width:500px;
+    text-align: center;
+  max-height: 80px;
+margin-top: 4600px;
+margin-left: -600px;
+grid-area: e;    
+}
+} 
+
+    </style>
+</head>
+<body>
+    <div id="desktop">
+    <a>
+        <img src="https://comparecamp.com/media/uploads/2019/06/Engagebay-Logo.png" alt="Engagebay Logo" > </a>
+       
+        <div class="menubar">
+<ul>
+<li><a class="active">Products </a>
+    <div class="submenu">
+    <ul>
+        <li><a>All-In-One Suite</a>
+            <div class = "submenu1">
+                <ul>
+                    <li><a>Marketing Automation</a></li>
+                    <li><a>Email Marketing</a></li>
+                    <li><a>Email Sequence</a></li>
+                    <li><a>Landing Pages</a></li>
+                    <li><a>Web Forms</a></li>
+                    <li><a>360 Degree customer view</a></li>
+                    <li><a>Contact Mangagement Software</a></li>
+                    <li><a>Free CRM </a></li>
+                        <li><a>Sales CRM</a></li>
+                    <li><a>Free Live Chat Software</a></li>
+                  <li><a>Macros</a></li>  
+
+                </ul>
+            </div>
+        </li>
+        <li><a>Marketing Bay</a>
+            <div class = "submenu2">
+            <ul>
+                <li><a>Marketing Automation</a></li>
+                <li><a>Email Marketing</a></li>
+                <li><a>Email Sequence</a></li>
+                <li><a>Landing Pages</a></li>
+                <li><a>Web Forms</a></li>
+            </ul>
+        </div>
+        </li>
+        <li><a>Sales Bay</a>
+            <div class = "submenu3">
+                <ul>
+                    <li><a>360 Degree customer view</a></li>
+                    <li><a>Contact Mangagement Software</a></li>
+                    <li><a>Free CRM </a></li>
+                        <li><a>Sales CRM</a></li>
+                </ul>
+        </li>
+        <li><a>Service Bay</a>
+            <div class = "submenu4">
+                <ul>
+                    <li><a>Free Live Chat Software</a></li>
+                    <li><a>Macros</a></li>
+                    <li><a>SLA</a></li>
+                    <li><a>views</a></li>
+                    <li><a>Tickets</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    </div>
+</li>  
+   <li id="pric"><a>Pricing</a></li> 
+   <li id="reso"><a>Resources</a></li>
+   <li id="blg"><a>Blog</a></li>
+   <li id="sign" ><a href = "C:\Users\Admin\Desktop\project\signup.html" target = "_parent">FREE SIGNUP</a></li>
+   <li><a>Demo</a></li>
+  </ul> 
+  </div> 
+  </div>
+
+ <div id="mobile">
+<div id="logo"><img src="https://comparecamp.com/media/uploads/2019/06/Engagebay-Logo.png" alt="Engagebay Logo" > </div>
+
+<ul id="mobilemenu">
+    <li><a href="#" onclick="btn()">Products</a>
+        <div id="mobilemenu1">
+        <ul>
+            <li><a href="#" onclick="btns()">> All-In-One Suit</a>
+                <div id="mobilemenu2">
+                    <ul>
+                        <li><a>Marketing Automation</a></li>
+                        <li><a>Email Marketing</a></li>
+                        <li><a>Email Sequence</a></li>
+                        <li><a>Landing Pages</a></li>
+                        <li><a>Web Forms</a></li>
+                        <li><a>360 Degree customer view</a></li>
+                        <li><a>Contact Mangagement Software</a></li>
+                        <li><a>Free CRM </a></li>
+                            <li><a>Sales CRM</a></li>
+                        <li><a>Free Live Chat Software</a></li>
+                      <li><a>Macros</a></li> 
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onclick="btn3()">> Marketing Bay</a>
+                <div id="mobilemenu3" >
+                    <ul>
+                        <li><a>Marketing Automation</a></li>
+                        <li><a>Email Marketing</a></li>
+                        <li><a>Email Sequence</a></li>
+                        <li><a>Landing Pages</a></li>
+                        <li><a>Web Forms</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#" onclick="btn4()">> Sales Bay</a>
+                <div id="mobilemenu4">
+                <ul>
+                    <li><a>360 Degree customer view</a></li>
+                    <li><a>Contact Mangagement Software</a></li>
+                    <li><a>Free CRM </a></li>
+                        <li><a>Sales CRM</a></li>
+                </ul>
+                </div>
+            </li>
+            <li><a href="#" onclick="btn5()">> Service Bay</a>
+                <div id="mobilemenu5">
+                <ul>
+                    <li><a>Free Live Chat Software</a></li>
+                    <li><a>Macros</a></li>
+                    <li><a>SLA</a></li>
+                    <li><a>views</a></li>
+                    <li><a>Tickets</a></li>
+                </ul>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Resources</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Free Signup</a></li>
+    <li><a href="#">Demo</a></li>
+</ul>
+<a id="open" onclick ="bars()"  >
+    &#9776; 
+  </a>
+ </div>
+ <div id="box">
+  <div id="boxs">
+      <div id="box1"><img src="	https://www.engagebay.com/blog/wp-content/uploads/2021/05/blog-bg.png"/></div>
+ <div id="box2" class="blog">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhyNioG27Z9xnLJd7wcmQhIQbdma9moQ7aQ&usqp=CAU"/>
+     <h2>Copper CRM Pricing & Comparison With Top Small Business Software</h2>
+<p>Shopping around for a CRM can get overwhelming, especially when you consider just how many options there are. It’s not surprising that the CRM market is booming — what with the rise of small businesses and startups. Occasionally, what you get in one CRM as a paid feature is a...</p>
+ </div>
+ <div id="box3" class="blog">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuETe_-XK6OYfKFz_dSEvljydvyfgp_3xyXw&usqp=CAU
+    "/>
+    <h2>SaaS Marketing Automation Explained (+ Top 5 Tools to Consider)</h2>
+    <p>Gone are the days of hard work — it’s smart work that rules now. Today, SaaS companies use cutting-edge technology to reach a wider audience, personalize advertisements to target and convert leads, and offer exceptional services.  But how can small businesses do the same with a limited marketing budget? With...</p>
+     </div>
+     <div id="box4" class="blog">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6OD1bHZFTKnWmeXTAxnuyiLA1FTwwESAZUA&usqp=CAU"/>
+         <h2>Promotional Email – How To Write Emails That Convert</h2>
+         <p>Email is one of the most effective marketing channels with an average open rate of 20-25%. The statistics show that almost 81% of small businesses rely on email to acquire customers. 80% use email marketing to retain their existing customer base. In other words, emails can convert prospects into clients....</p>
+     </div>
+     <div id="box5" class="blog">
+         <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVgO99OOa85lgJowp9r0iGhbXl8Ps8fiJ_qQ&usqp=CAU"/>
+         <h2>Marketing Workflow Guide for Business Growth (& 5 Great Tools)</h2>
+         <p>Creating a marketing workflow may seem like a daunting task but it will actually save you loads of time and money in the long run. With a range of different activities – email marketing campaigns, advertising campaigns, and PR – marketers struggle to keep up with all of it at...</p>
+     </div>
+     <div id="box6" class="blog">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmmeEylI3eOMclYumS2fC3H9ifRY_lgrXOOA&usqp=CAU"/>
+         <h2>What Is Restaurant CRM Software & Which One Suits A Small Business?</h2>
+         <p>Are you a restaurant owner? Have you been struggling to grow your restaurant business? You’ve come to the right place. There are many restaurant CRM software available, and some of them can really help you grow your revenue. In this blog post, we’ll tell you about why you need restaurant...</p>
+     </div>
+<div id="box7" class="blog">
+    <img src="https://templatefor.net/wp-content/uploads/2018/05/Introduction-Email-Templates.jpg"/>
+    <h2>15 Introduction Email Templates That Work Like A Charm (in 2021)</h2>
+    <p>Looking for how to write an introduction email to new subscribers, cold leads, or whomever? Then an introduction email template can help. How? Introduction email templates: Reduce your writing time Are easy to update Serve as a source of inspiration for writing introduction emails In this post, you’ll find introduction...</p>
+</div>
+<div id="box8" class="blog">
+    <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcYk0g-BDOW6f1y2sOoWiu-ucalMW_u1KBLg&usqp=CAU"/>
+    <h2>Automotive CRM For Your Dealership: A Quick Guide (+ 5 Best Software)</h2>
+    <p>Thanks to technology, people like to shop from the comfort of their homes. Instead of strolling from one showroom to another, consumers today browse and compare their options online before buying a vehicle. Since selling remotely and online has become normal, auto dealers and automotive businesses have seen value in...</p>
+</div>
+<div id="box9" class="blog">
+    <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRo6aqF_TgAjpaPwNjj2rG-sJrMUAhNq4L1Q&usqp=CAU"/>
+    <h2>SugarCRM Pricing, Features, and Comparison with Cheaper Alternatives</h2>
+    <p>You need a CRM, but does it have to be as expensive as SugarCRM? No, it certainly does not! In this blog post, we’ll first examine the features and pricing of SugarCRM so you know exactly what your money can get you with this software. Next, we’ll look at two...</p>
+</div>
+<div id="box10" class="blog">
+    <img src="	https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGFI0AWDLGNBOpv7zf0JQQOKTVTUO5xZTJVA&usqp=CAU"/>
+    <h2>7 Great Customer Lifecycle Marketing Strategies to Make More Money</h2>
+    <p>Repeat customers are the holy grail for every business. Wouldn’t you agree?  Marketers who take a long-term view of their relationships with customers gain the most ROI on their efforts.  While attracting new customers is important, using customer lifecycle marketing to keep your existing consumers c</p>
+</div>
+<div class="footer">
+    <p>Copyright <a>&#169</a>EngageBay- All-In-One marketing,sales and service software for growing business |Powered by <a href="#">Astra WordPress Theme</a></p>       </div>
+</div>
+    </div>
+    
+ <script>
+function bars() {
+    var x = document.getElementById("mobilemenu");
+    if(x.style.display == "block") {
+        x.style.display == "none";
+    }
+    else {
+        x.style.display = "block";
+    }
+  console.log("1");  
+}
+function btn(){
+var x = document.getElementById("mobilemenu1");
+    if(x.style.display == "none") {
+        x.style.display == "block";
+    }
+    else {
+        x.style.display = "block";
+    }
+    
+}
+var y = document.getElementById("mobilemenu2");
+function btns(){
+    if(y.style.display == "none"  ) {
+        y.style.display == "block";
+    }
+    else {
+        y.style.display = "block";
+    }
+}
+var z = document.getElementById("mobilemenu3");
+function btn3(){
+    if(z.style.display == "none"  ) {
+        z.style.display == "block";
+    }
+    else {
+        z.style.display = "block";
+    }  
+}
+var l = document.getElementById("mobilemenu4");
+function btn4(){
+    if(l.style.display == "none"  ) {
+        l.style.display == "block";
+    }
+    else {
+        l.style.display = "block";
+    }  
+}
+var m = document.getElementById("mobilemenu5");
+function btn5(){
+    if(m.style.display == "none"  ) {
+        m.style.display == "block";
+    }
+    else {
+        m.style.display = "block";
+    }  
+}
+
+    </script> 
+   
+  </body>
+</html>
