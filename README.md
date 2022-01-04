@@ -1,10 +1,14 @@
-# Introduction
-## Deployed Link : https://akashdwivedi6261.github.io/engageProject/
 ## Clone of website EngageBay
+## Deployed Link : https://akashdwivedi6261.github.io/engageProject/
+## Installing and Running
+Executing the commands mentioned below one by one in your command line will help in making this application run on your system.
 
-EngageBay is an affordable all-in-one CRM with marketing, sales & support.
+       git clone https://github.com/akashdwivedi6261/engageProject.git
+       cd ./engageProject/index.html
+ 
+## Short description of our project:
+EngageBay is an affordable all-in-one CRM with marketing, sales & support. It offers Award Winning CRM Software for Sales, Marketing & Automation. One Platform for All our Marketing, Sales, and Support Teams. Affordable Pricing. Try It Free.
 
-Tech-stack: HTML, CSS, JavaScript
 
 ### Features: 
    #### 1. Landing Page: 
@@ -29,12 +33,11 @@ Tech-stack: HTML, CSS, JavaScript
     
 ![Screenshot (61)](https://user-images.githubusercontent.com/91199423/148033789-001973cf-f6e4-46f1-9d29-086aec593622.png)
 
-# A short description of our project:
-## 1.Technology we used:
+## Technology we used:
 HTML and CSS: Hypertext Markup Language and Cascading Style Sheets are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications. Web developers use HTML keywords or tags to instruct the Web browser application on how to format and display the content of Web pages.
-## 2. Challenges we faced: 
+## Challenges we faced: 
 we all are new to Github and javascript so understanding the concepts and applying them immediately is one of the major challenges. we have to connect 2–3 times a day to meet for a discussion and track the project's progress.
-## 3. Our Workflow:
+## Our Workflow:
 First, we shared our responsibility in the project, initiated the GitHub repository, and worked on our respective branches. we used to connect daily if there is any problem Finally, we merge each branch to the master branch. So, we were successful in replicating Clone of engagebay website. It was knowledgeable as well as a bit challenging, we learned a lot of new things while building and working as a team.
 
 Thank you for reading!
